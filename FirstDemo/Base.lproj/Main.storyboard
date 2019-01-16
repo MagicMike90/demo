@@ -44,12 +44,10 @@
                                     <constraint firstAttribute="trailing" secondItem="cZa-k8-DIA" secondAttribute="trailing" id="n80-IU-yja"/>
                                 </constraints>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-30-TtM">
-                                <rect key="frame" x="7" y="144" width="360" height="360"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-30-TtM">
+                                <rect key="frame" x="27" y="173" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2c9-30-TtM" secondAttribute="height" multiplier="1:1" id="3Zs-Be-2wp"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="IQf-O9-xsJ" appends="YES" id="0kb-yE-Zsj"/>
                                 </connections>
