@@ -52,6 +52,10 @@
                                     <outletCollection property="gestureRecognizers" destination="IQf-O9-xsJ" appends="YES" id="0kb-yE-Zsj"/>
                                 </connections>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-KJ-RKM" customClass="RatingControl" customModule="FirstDemo" customModuleProvider="target">
+                                <rect key="frame" x="27" y="515" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
