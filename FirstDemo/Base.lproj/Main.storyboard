@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,87 +20,77 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-qB-LW1" userLabel="Container">
                                 <rect key="frame" x="8" y="28" width="304" height="532"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="obl-um-XGu">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="532"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-R8-2F0">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="126"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfR-Se-Sga" userLabel="Form">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="126"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-JW-9K1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="44"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="44" id="HG1-5E-Vdf"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-k8-DIA">
-                                                        <rect key="frame" x="0.0" y="44" width="304" height="44"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="44" id="Zcr-Pw-RWZ"/>
-                                                        </constraints>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBO-sw-UyL">
-                                                        <rect key="frame" x="0.0" y="88" width="304" height="38"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="38" id="6bm-Nd-bKd"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Set Default Label Text"/>
-                                                        <connections>
-                                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvN-wD-NM6"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-JW-9K1">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="44"/>
                                                 <constraints>
-                                                    <constraint firstItem="bXM-JW-9K1" firstAttribute="leading" secondItem="TfR-Se-Sga" secondAttribute="leading" id="8rd-Qo-3Ml"/>
-                                                    <constraint firstItem="EBO-sw-UyL" firstAttribute="leading" secondItem="TfR-Se-Sga" secondAttribute="leading" id="DPg-xT-ned"/>
-                                                    <constraint firstItem="bXM-JW-9K1" firstAttribute="top" secondItem="TfR-Se-Sga" secondAttribute="top" id="EjR-S4-6KD"/>
-                                                    <constraint firstAttribute="trailing" secondItem="EBO-sw-UyL" secondAttribute="trailing" id="GOm-nc-Rgw"/>
-                                                    <constraint firstItem="EBO-sw-UyL" firstAttribute="top" secondItem="cZa-k8-DIA" secondAttribute="bottom" id="ILm-g0-eUl"/>
-                                                    <constraint firstItem="cZa-k8-DIA" firstAttribute="top" secondItem="bXM-JW-9K1" secondAttribute="bottom" id="JcN-e3-69t"/>
-                                                    <constraint firstAttribute="trailing" secondItem="bXM-JW-9K1" secondAttribute="trailing" id="N97-T7-pbg"/>
-                                                    <constraint firstAttribute="trailing" secondItem="cZa-k8-DIA" secondAttribute="trailing" id="cAC-Td-SwN"/>
-                                                    <constraint firstItem="cZa-k8-DIA" firstAttribute="leading" secondItem="TfR-Se-Sga" secondAttribute="leading" id="czI-Ng-JLB"/>
-                                                    <constraint firstAttribute="bottom" secondItem="EBO-sw-UyL" secondAttribute="bottom" id="xgd-nU-dfg"/>
+                                                    <constraint firstAttribute="height" constant="44" id="HG1-5E-Vdf"/>
                                                 </constraints>
-                                            </view>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-30-TtM">
-                                                <rect key="frame" x="0.0" y="134" width="304" height="320"/>
-                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-k8-DIA">
+                                                <rect key="frame" x="0.0" y="44" width="304" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Zcr-Pw-RWZ"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBO-sw-UyL">
+                                                <rect key="frame" x="0.0" y="88" width="304" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="6bm-Nd-bKd"/>
+                                                </constraints>
+                                                <state key="normal" title="Set Default Label Text"/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="IQf-O9-xsJ" appends="YES" id="0kb-yE-Zsj"/>
+                                                    <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvN-wD-NM6"/>
                                                 </connections>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-KJ-RKM" customClass="RatingControl" customModule="FirstDemo" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="462" width="304" height="70"/>
-                                            </stackView>
+                                            </button>
                                         </subviews>
+                                    </stackView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-30-TtM">
+                                        <rect key="frame" x="0.0" y="150" width="304" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="2c9-30-TtM" secondAttribute="trailing" id="HYJ-UH-yEM"/>
-                                            <constraint firstItem="2c9-30-TtM" firstAttribute="leading" secondItem="obl-um-XGu" secondAttribute="leading" id="v8P-JT-6QQ"/>
+                                            <constraint firstAttribute="width" secondItem="2c9-30-TtM" secondAttribute="height" multiplier="19:20" id="Ys2-fo-Kjl"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="IQf-O9-xsJ" appends="YES" id="0kb-yE-Zsj"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-KJ-RKM" customClass="RatingControl" customModule="FirstDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="478" width="304" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="3gs-yG-SxS"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="obl-um-XGu" secondAttribute="bottom" id="FMo-qA-o90"/>
-                                    <constraint firstAttribute="trailing" secondItem="obl-um-XGu" secondAttribute="trailing" id="Tir-PQ-I5q"/>
-                                    <constraint firstItem="obl-um-XGu" firstAttribute="top" secondItem="ZLE-qB-LW1" secondAttribute="top" id="UUh-ty-x4h"/>
-                                    <constraint firstItem="obl-um-XGu" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="W02-zh-nQ7"/>
+                                    <constraint firstItem="2c9-30-TtM" firstAttribute="top" secondItem="Ocg-R8-2F0" secondAttribute="bottom" constant="24" id="4OC-nT-Ram"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ocg-R8-2F0" secondAttribute="trailing" id="5oP-Dc-vsR"/>
+                                    <constraint firstItem="2c9-30-TtM" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="E7y-uS-AqL"/>
+                                    <constraint firstItem="Efw-KJ-RKM" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="H3R-2r-tG2"/>
+                                    <constraint firstAttribute="trailing" secondItem="2c9-30-TtM" secondAttribute="trailing" id="IJ2-xP-eZ2"/>
+                                    <constraint firstItem="Ocg-R8-2F0" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="ITc-Qp-0Vc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Efw-KJ-RKM" secondAttribute="bottom" constant="8" id="RRc-Je-plF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efw-KJ-RKM" secondAttribute="trailing" id="V3F-CS-9dp"/>
+                                    <constraint firstItem="Ocg-R8-2F0" firstAttribute="top" secondItem="ZLE-qB-LW1" secondAttribute="top" id="mrj-cN-Ooe"/>
+                                    <constraint firstItem="Efw-KJ-RKM" firstAttribute="top" secondItem="2c9-30-TtM" secondAttribute="bottom" constant="8" id="vVW-cg-4Aw"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZLE-qB-LW1" secondAttribute="bottom" constant="8" id="8ar-Uk-38Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLE-qB-LW1" secondAttribute="trailing" constant="8" id="DeU-rA-wBb"/>
-                            <constraint firstItem="ZLE-qB-LW1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="KwE-3w-Swv"/>
-                            <constraint firstItem="ZLE-qB-LW1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="eW7-O4-7DS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZLE-qB-LW1" secondAttribute="bottom" constant="8" id="5So-bc-nEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLE-qB-LW1" secondAttribute="trailing" constant="8" id="Etu-cF-K1g"/>
+                            <constraint firstItem="ZLE-qB-LW1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="HZe-Pt-w28"/>
+                            <constraint firstItem="ZLE-qB-LW1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="ofX-Vx-aqf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
