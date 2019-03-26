@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-qB-LW1" userLabel="Container">
-                                <rect key="frame" x="8" y="28" width="304" height="532"/>
+                                <rect key="frame" x="8" y="28" width="398" height="700"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-R8-2F0">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="126"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="195"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-JW-9K1">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="398" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="HG1-5E-Vdf"/>
                                                 </constraints>
@@ -33,7 +33,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-k8-DIA">
-                                                <rect key="frame" x="0.0" y="44" width="304" height="44"/>
+                                                <rect key="frame" x="0.0" y="44" width="398" height="113"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="Zcr-Pw-RWZ"/>
                                                 </constraints>
@@ -42,7 +42,7 @@
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBO-sw-UyL">
-                                                <rect key="frame" x="0.0" y="88" width="304" height="38"/>
+                                                <rect key="frame" x="0.0" y="157" width="398" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="38" id="6bm-Nd-bKd"/>
                                                 </constraints>
@@ -52,9 +52,15 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cZa-k8-DIA" firstAttribute="leading" secondItem="Ocg-R8-2F0" secondAttribute="leading" id="9Aq-07-Jn5"/>
+                                            <constraint firstItem="cZa-k8-DIA" firstAttribute="top" secondItem="bXM-JW-9K1" secondAttribute="bottom" id="Cg3-Wj-3Ry"/>
+                                            <constraint firstAttribute="trailing" secondItem="cZa-k8-DIA" secondAttribute="trailing" id="jAB-Gr-Asc"/>
+                                            <constraint firstItem="EBO-sw-UyL" firstAttribute="top" secondItem="cZa-k8-DIA" secondAttribute="bottom" id="tNf-Og-gbx"/>
+                                        </constraints>
                                     </stackView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-30-TtM">
-                                        <rect key="frame" x="0.0" y="150" width="304" height="320"/>
+                                        <rect key="frame" x="0.0" y="219" width="398" height="419"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2c9-30-TtM" secondAttribute="height" multiplier="19:20" id="Ys2-fo-Kjl"/>
@@ -63,8 +69,8 @@
                                             <outletCollection property="gestureRecognizers" destination="IQf-O9-xsJ" appends="YES" id="0kb-yE-Zsj"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-KJ-RKM" customClass="RatingControl" customModule="FirstDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="478" width="304" height="46"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Efw-KJ-RKM" customClass="RatingControl" customModule="FirstDemo" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="646" width="382" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="3gs-yG-SxS"/>
                                         </constraints>
@@ -75,11 +81,11 @@
                                     <constraint firstItem="2c9-30-TtM" firstAttribute="top" secondItem="Ocg-R8-2F0" secondAttribute="bottom" constant="24" id="4OC-nT-Ram"/>
                                     <constraint firstAttribute="trailing" secondItem="Ocg-R8-2F0" secondAttribute="trailing" id="5oP-Dc-vsR"/>
                                     <constraint firstItem="2c9-30-TtM" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="E7y-uS-AqL"/>
-                                    <constraint firstItem="Efw-KJ-RKM" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="H3R-2r-tG2"/>
+                                    <constraint firstItem="Efw-KJ-RKM" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" constant="8" id="H3R-2r-tG2"/>
                                     <constraint firstAttribute="trailing" secondItem="2c9-30-TtM" secondAttribute="trailing" id="IJ2-xP-eZ2"/>
                                     <constraint firstItem="Ocg-R8-2F0" firstAttribute="leading" secondItem="ZLE-qB-LW1" secondAttribute="leading" id="ITc-Qp-0Vc"/>
                                     <constraint firstAttribute="bottom" secondItem="Efw-KJ-RKM" secondAttribute="bottom" constant="8" id="RRc-Je-plF"/>
-                                    <constraint firstAttribute="trailing" secondItem="Efw-KJ-RKM" secondAttribute="trailing" id="V3F-CS-9dp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efw-KJ-RKM" secondAttribute="trailing" constant="8" id="V3F-CS-9dp"/>
                                     <constraint firstItem="Ocg-R8-2F0" firstAttribute="top" secondItem="ZLE-qB-LW1" secondAttribute="top" id="mrj-cN-Ooe"/>
                                     <constraint firstItem="Efw-KJ-RKM" firstAttribute="top" secondItem="2c9-30-TtM" secondAttribute="bottom" constant="8" id="vVW-cg-4Aw"/>
                                 </constraints>
